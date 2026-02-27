@@ -5,15 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VillaTV - Básquetbol en Vivo</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background-color: #f4f4f4; }
-        h1 { color: #e62117; }
-        .btn { display: inline-block; padding: 15px 25px; background: #e62117; color: white; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        body { font-family: 'Helvetica', sans-serif; margin: 0; background-color: #0f0f0f; color: white; text-align: center; }
+        nav { padding: 15px; background: #000; border-bottom: 2px solid #e62117; }
+        .logo { max-width: 150px; height: auto; }
+        .main-container { max-width: 900px; margin: 20px auto; padding: 10px; }
+        
+        /* Contenedor del Video (Proporción 16:9) */
+        .video-wrapper { 
+            position: relative; padding-bottom: 56.25%; height: 0; 
+            background: #222; border-radius: 8px; overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+        
+        .status-bar { background: #e62117; color: white; padding: 10px; font-weight: bold; margin-bottom: 15px; border-radius: 4px; }
+        .info-box { margin-top: 30px; padding: 20px; background: #1a1a1a; border-radius: 8px; border: 1px solid #333; }
+        .btn-sub { display: inline-block; background: #ff0000; color: white; padding: 12px 25px; text-decoration: none; border-radius: 30px; font-weight: bold; margin-top: 15px; }
     </style>
 </head>
 <body>
-    <h1>VillaTV</h1>
-    <p>Capturando momentos.</p>
-    <br>
-    <a href="https://www.youtube.com/@VillaTV_uy" class="btn">Ir al Canal de YouTube</a>
+
+<nav>
+    <img src="logo.png" alt="VillaTV Logo" class="logo">
+</nav>
+
+<div class="main-container">
+    <div class="status-bar">🔴 TRANSMISIÓN EN VIVO / ÚLTIMO PARTIDO</div>
+    
+    <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/live_stream?channel=UCNHmjpi5-lOAWE1_jtBRt3Q" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+        </iframe>
+    </div>
+
+    <div class="info-box">
+        <h2>Básquetbol Formativo</h2>
+        <p>U16 - U18 - U19 - U20 - Liga de Desarrollo</p>
+        <p>Cubriendo el básquetbol de formativas</p>
+        <a href="https://www.youtube.com/@VillaTV_uy" class="btn-sub" target="_blank">SUSCRIBITE AL CANAL</a>
+    </div>
+</div>
+
 </body>
 </html>
