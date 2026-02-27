@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colaborá con VillaTV</title>
     <style>
-        /* Definición de Estilos Globales */
+        /* Estilos Globales */
         body { 
             font-family: 'Helvetica', sans-serif; 
             margin: 0; 
@@ -47,7 +47,7 @@
             margin-bottom: 20px; 
         }
 
-        /* Grilla de Opciones de Pago */
+        /* Grilla de Opciones con Línea Lateral */
         .payment-grid {
             display: grid; 
             grid-template-columns: 1fr 1fr; 
@@ -59,15 +59,15 @@
             padding: 25px;
             border-radius: 8px;
             border: 1px solid #333;
+            border-left: 5px solid #cc3838; /* La línea roja que te gustó */
             text-align: center;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            transition: transform 0.3s ease, border-color 0.3s ease;
+            transition: transform 0.3s ease;
         }
         .account-box:hover {
             transform: translateY(-5px);
-            border-color: #cc3838;
         }
         .account-number {
             font-size: 1.4em;
@@ -80,7 +80,7 @@
         /* Botón MercadoPago */
         .btn-mp {
             display: inline-block;
-            background-color: #009ee3; /* Azul oficial de MercadoPago */
+            background-color: #009ee3;
             color: white;
             padding: 12px 20px;
             text-decoration: none;
@@ -96,7 +96,6 @@
         /* Navegación y contacto */
         .contact-box {
             margin-top: 30px;
-            font-size: 0.95em;
         }
         .back-link { 
             display: block; 
@@ -111,7 +110,7 @@
             text-decoration: underline; 
         }
 
-        /* Responsive */
+        /* Responsive para celulares */
         @media (max-width: 650px) {
             .payment-grid { grid-template-columns: 1fr; }
         }
@@ -127,9 +126,9 @@
     <h1>Tu apoyo mantiene encendida la transmisión</h1>
     
     <div class="info-box">
-        [cite_start]<p>Llevar el básquetbol formativo a cada pantalla exige un esfuerzo económico importante[cite: 2, 4]. [cite_start]Detrás de cada transmisión hay inversión en equipamiento técnico, traslados a las canchas y el mantenimiento de una plataforma que permita disfrutar del deporte libremente y sin costo de suscripción[cite: 2, 4, 38].</p>
+        <p>Llevar el básquetbol formativo a cada pantalla exige un esfuerzo económico importante. Detrás de cada transmisión hay inversión en equipamiento técnico, traslados a las canchas y el mantenimiento de una plataforma que permita disfrutar del deporte libremente y sin costo de suscripción.</p>
         
-        [cite_start]<p>VillaTV es un proyecto independiente que crece gracias a la comunidad[cite: 2, 37]. [cite_start]Tu contribución es vital para que podamos seguir acompañando a las categorías juveniles y mejorar constantemente nuestra calidad técnica[cite: 37, 38].</p>
+        <p>VillaTV es un proyecto independiente que crece gracias a la comunidad. Tu contribución es vital para que podamos seguir acompañando a las categorías juveniles y mejorar constantemente nuestra calidad técnica.</p>
     </div>
 
     <h2>Elegí cómo colaborar</h2>
@@ -152,19 +151,19 @@
                     SUSCRIBIRME POR MERCADO PAGO
                 </a>
             </div>
-            [cite_start]<p style="text-align: center; text-align-last: center; font-size: 0.85em; color: #888; margin-top: 15px;">Gestionado por Mercado Pago [cite: 35]</p>
+            <p style="text-align: center; text-align-last: center; font-size: 0.85em; color: #888; margin-top: 15px;">Gestionado por Mercado Pago</p>
         </div>
     </div>
 
     <div class="contact-box">
         <p style="text-align: center; text-align-last: center;">Si preferís otras formas de colaborar o tenés alguna consulta, escribinos por WhatsApp:</p>
-        <a href="https://wa.me/59899232188" style="color: #25d366; font-weight: bold; text-decoration: none; font-size: 1.1em;">
-            [cite_start]099 232 188 [cite: 42]
+        <a href="https://wa.me/59899232188" style="color: #25d366; font-weight: bold; text-decoration: none; font-size: 1.2em;">
+            099 232 188
         </a>
     </div>
 
     <p style="font-size: 0.85em; color: #888; margin-top: 30px; text-align: center; text-align-last: center;">
-        [cite_start]Los aportes se destinan íntegramente a cubrir costos operativos y mejoras técnicas de VillaTV[cite: 37, 38].
+        Los aportes se destinan íntegramente a cubrir costos operativos y mejoras técnicas de VillaTV.
     </p>
 
     <a href="index.html" class="back-link">← Volver al inicio</a>
