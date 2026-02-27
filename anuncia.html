@@ -5,17 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anunciá en VillaTV</title>
     <style>
-        body { font-family: 'Helvetica', sans-serif; margin: 0; background-color: #0f0f0f; color: white; text-align: center; }
-        nav { padding: 15px; background: #000; border-bottom: 2px solid #cc3838; }
-        .logo { max-width: 150px; height: auto; cursor: pointer; }
-        .main-container { max-width: 800px; margin: 20px auto; padding: 20px; text-align: left; line-height: 1.6; }
-        .info-box { background: #1a1a1a; padding: 25px; border-radius: 8px; border: 1px solid #333; margin-bottom: 20px; }
-        h1, h2 { color: #cc3838; }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
-        .btn-wsap { display: inline-block; background: #25d366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 30px; font-weight: bold; margin-top: 20px; width: 100%; text-align: center; box-sizing: border-box; }
-        .back-link { display: block; margin-top: 30px; color: #888; text-decoration: none; text-align: center; font-size: 0.9em; }
-        .back-link:hover { color: white; text-decoration: underline; }
+        /* Definición de Estilos Globales */
+        body { 
+            font-family: 'Helvetica', sans-serif; 
+            margin: 0; 
+            background-color: #0f0f0f; 
+            color: white; 
+            text-align: center; 
+        }
+        nav { 
+            padding: 15px; 
+            background: #000; 
+            border-bottom: 2px solid #cc3838; 
+        }
+        .logo { 
+            max-width: 150px; 
+            height: auto; 
+            cursor: pointer; 
+        }
+        .main-container { 
+            max-width: 800px; 
+            margin: 20px auto; 
+            padding: 20px; 
+            line-height: 1.6; 
+        }
+        /* Estilos de Texto y Bloques */
+        h1, h2, h3 { 
+            color: #cc3838; 
+            text-align: center; /* Títulos centrados */
+        }
+        p { 
+            text-align: justify; /* Texto justificado */
+            text-align-last: left; /* La última línea queda a la izquierda */
+        }
+        .info-box { 
+            background: #1a1a1a; 
+            padding: 25px; 
+            border-radius: 8px; 
+            border: 1px solid #333; 
+            margin-bottom: 20px; 
+        }
+        ul { 
+            padding-left: 20px; 
+            text-align: justify; 
+        }
+        li { 
+            margin-bottom: 10px; 
+        }
+        /* Grilla de Planes */
+        .planes-grid {
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 20px;
+        }
+        .plan-box {
+            margin-bottom: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        /* Botones y Navegación */
+        .btn-wsap { 
+            display: inline-block; 
+            background: #25d366; 
+            color: white; 
+            padding: 15px 30px; 
+            text-decoration: none; 
+            border-radius: 30px; 
+            font-weight: bold; 
+            margin-top: 20px; 
+            width: 100%; 
+            text-align: center; 
+            box-sizing: border-box; 
+        }
+        .back-link { 
+            display: block; 
+            margin-top: 30px; 
+            color: #888; 
+            text-decoration: none; 
+            text-align: center; 
+            font-size: 0.9em; 
+        }
+        .back-link:hover { 
+            color: white; 
+            text-decoration: underline; 
+        }
+
+        /* Ajuste para móviles */
+        @media (max-width: 600px) {
+            .planes-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
@@ -28,27 +107,27 @@
     <h1>Impulsá tu marca junto al básquetbol formativo</h1>
     
     <div class="info-box">
-        <p>VillaTV es más que un streaming; es el punto de encuentro de familias, jugadores y entrenadores. Al anunciar con nosotros, tu marca no solo gana visibilidad, sino que apoya directamente el crecimiento del deporte juvenil uruguayo.</p>
+        <p>VillaTV es más que un streaming; es el punto de encuentro de familias, jugadores y entrenadores[cite: 2, 6, 18]. Al anunciar con nosotros, tu marca no solo gana visibilidad, sino que apoya directamente el crecimiento del deporte juvenil uruguayo[cite: 20, 36, 37].</p>
     </div>
 
     <h2>¿Por qué anunciar en VillaTV?</h2>
     <ul>
-        <li><strong>Audiencia Comprometida:</strong> Llegamos directamente a deportistas, familias y cuerpo técnico con una fuerte conexión emocional hacia lo que hacemos.</li>
-        <li><strong>Presencia todo el año:</strong> Cubrimos competencias que duran todo el año: Campeonato U16 a U20 (marzo a noviembre) y Liga de Desarrollo (octubre a marzo).</li>
-        <li><strong>Impacto Real:</strong> Nuestro contenido es un recurso útil para entrenadores y clubes, lo que asegura una exposición con alto nivel de atención.</li>
+        <li><strong>Audiencia Comprometida:</strong> Llegamos directamente a deportistas, familias y cuerpo técnico con una fuerte conexión emocional hacia lo que hacemos[cite: 18].</li>
+        <li><strong>Presencia todo el año:</strong> Cubrimos competencias que duran todo el año: Campeonato U16 a U20 (marzo a noviembre) y Liga de Desarrollo (octubre a marzo)[cite: 21, 22].</li>
+        <li><strong>Impacto Real:</strong> Nuestro contenido es un recurso útil para entrenadores y clubes, lo que asegura una exposición con alto nivel de atención[cite: 3, 16, 17].</li>
     </ul>
 
     <h2>Planes de Patrocinio</h2>
-    <p>Contamos con opciones flexibles diseñadas para comercios locales y empresas que quieran ser parte del crecimiento de las formativas:</p>
+    <p>Contamos con opciones flexibles diseñadas para comercios locales y empresas que quieran ser parte del crecimiento de las formativas[cite: 23, 38]:</p>
     
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-        <div class="info-box" style="margin-bottom: 0;">
+    <div class="planes-grid">
+        <div class="info-box plan-box">
             <h3>Plan Básico</h3>
-            <p>Presencia visual de tu marca durante las transmisiones en pausas naturales del juego.</p>
+            <p>Presencia visual de tu marca durante las transmisiones en pausas naturales del juego[cite: 24, 25, 27].</p>
         </div>
-        <div class="info-box" style="margin-bottom: 0;">
+        <div class="info-box plan-box">
             <h3>Plan Plus</h3>
-            <p>Presencia ampliada: logo en pantalla inicial/final y en afiches promocionales para redes sociales.</p>
+            <p>Presencia ampliada: logo en pantalla inicial/final y en afiches promocionales para redes sociales[cite: 29, 32, 33].</p>
         </div>
     </div>
 
