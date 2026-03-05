@@ -264,6 +264,29 @@ footer a:hover {
     color: var(--rojo-villa);
 }
 
+.social-icons {
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: var(--gris-texto);
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.social-icons svg {
+    width: 24px;
+    height: 24px;
+}
+
+.social-icons a:hover {
+    color: var(--rojo-villa);
+    transform: translateY(-3px); /* Pequeño salto hacia arriba */
+}
+
 /* ==========================================
    RESPONSIVE
    ========================================== */
