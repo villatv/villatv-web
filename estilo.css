@@ -230,10 +230,33 @@ nav {
     box-sizing: border-box; 
 }
 
+footer {
+    margin-top: 60px;
+    padding: 20px 0;
+    background-color: var(--negro-nav);
+    border-top: 1px solid var(--gris-borde);
+}
+
+.footer-container p {
+    font-size: 0.8em;
+    color: var(--gris-texto);
+    margin-bottom: 5px;
+    text-align: center;
+    text-align-last: center;
+}
+
+.footer-links {
+    font-size: 0.8em;
+}
+
+.separator {
+    color: var(--gris-borde);
+    margin: 0 8px;
+}
+
 footer a {
     color: var(--gris-texto);
     text-decoration: none;
-    font-size: 0.9em;
     transition: color 0.3s ease;
 }
 
