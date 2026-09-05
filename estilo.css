@@ -220,14 +220,19 @@ nav {
 .btn-wsap { 
     display: inline-block; 
     background: #25d366; 
-    color: var(--blanco); 
-    padding: 15px 30px; 
+    color: var(--blanco) !important; 
+    padding: 12px 25px; 
     text-decoration: none; 
     border-radius: 30px; 
     font-weight: bold; 
     margin-top: 20px; 
-    width: 100%; 
+    width: auto; 
     box-sizing: border-box; 
+    transition: opacity 0.3s;
+}
+
+.btn-wsap:hover {
+    opacity: 0.9;
 }
 
 footer {
