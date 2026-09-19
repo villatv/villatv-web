@@ -235,6 +235,111 @@ nav {
     opacity: 0.9;
 }
 
+/* Extensiones para componentes de Planes de Anuncia */
+.plan-box.featured {
+    background: #221a1a;
+    border: 1px solid var(--rojo-villa);
+    border-left: 5px solid var(--rojo-villa);
+}
+
+.plan-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.plan-header h3 {
+    margin: 0;
+    font-size: 1.6em;
+    text-align: left;
+}
+
+.badge {
+    font-size: 0.65em;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.badge-featured {
+    background: var(--rojo-villa);
+    color: var(--blanco);
+}
+
+.badge-outline {
+    background: #333;
+    color: var(--blanco);
+    border: 1px solid var(--rojo-villa);
+}
+
+.price-box {
+    background: rgba(204, 56, 56, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.featured .price-box {
+    background: rgba(204, 56, 56, 0.2);
+    border: 1px solid rgba(204, 56, 56, 0.3);
+}
+
+.price-amount {
+    font-size: 2.2em;
+    color: var(--rojo-villa);
+    font-weight: bold;
+}
+
+.price-period {
+    font-size: 0.85em;
+    color: var(--gris-texto);
+    display: block;
+    margin-top: 5px;
+}
+
+.plan-desc {
+    text-align: left;
+    text-align-last: left;
+    font-size: 0.95em;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.plan-features {
+    text-align: left;
+    padding-left: 20px;
+    margin: 0 0 25px 0;
+    list-style-type: '✓ ';
+    color: #eee;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+.plan-features li {
+    margin-bottom: 10px;
+}
+
+.info-list {
+    text-align: left;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.plan-box .btn-wsap {
+    width: 100%;
+    padding: 12px;
+    font-size: 0.9em;
+    border-radius: 6px;
+    text-align: center;
+    margin-top: auto;
+}
+
 footer {
     margin-top: 60px;
     padding: 20px 0;
@@ -298,75 +403,4 @@ footer a:hover {
    ========================================== */
 @media (max-width: 650px) {
     .payment-grid, .planes-grid { grid-template-columns: 1fr; }
-}
-
-/* Miniatura dentro de la tarjeta del plan */
-.ejemplo-preview {
-    margin: 15px 0;
-    cursor: pointer;
-    border-radius: 6px;
-    overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    position: relative;
-    transition: transform 0.2s, border-color 0.2s;
-    background: #111;
-}
-
-.ejemplo-preview:hover {
-    transform: translateY(-2px);
-    border-color: var(--rojo-villa);
-}
-
-.ejemplo-preview img {
-    width: 100%;
-    height: auto;
-    display: block;
-    opacity: 0.85;
-    transition: opacity 0.2s;
-}
-
-.ejemplo-preview:hover img {
-    opacity: 1;
-}
-
-.ejemplo-preview span {
-    display: block;
-    padding: 6px 10px;
-    font-size: 0.82em;
-    color: #ccc;
-    background: rgba(0, 0, 0, 0.7);
-    text-align: center;
-}
-
-/* Modal superpuesto */
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.85);
-    backdrop-filter: blur(4px);
-    align-items: center;
-    justify-content: center;
-}
-
-.modal-contenido {
-    max-width: 90%;
-    max-height: 85vh;
-    border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.8);
-    border: 1px solid #333;
-}
-
-.modal-cerrar {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    color: #fff;
-    font-size: 35px;
-    font-weight: bold;
-    cursor: pointer;
 }
