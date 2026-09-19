@@ -10,27 +10,6 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="estilo.css">
 </head>
-
-    <script>
-    function abrirModal(imagenSrc) {
-        var modal = document.getElementById("modal-ejemplo");
-        var imgModal = document.getElementById("img-modal");
-        modal.style.display = "flex";
-        imgModal.src = imagenSrc;
-    }
-
-    function cerrarModal() {
-        document.getElementById("modal-ejemplo").style.display = "none";
-    }
-
-    // Cerrar modal al presionar la tecla Escape
-    document.addEventListener('keydown', function(event) {
-        if (event.key === "Escape") {
-            cerrarModal();
-        }
-    });
-    </script>
-
 <body>
 
 <nav>
@@ -41,116 +20,117 @@
     <h1>Impulsá tu marca junto al básquetbol formativo</h1>
     
     <div class="info-box">
-        <p>VillaTV es un proyecto independiente dedicado a la transmisión y difusión del básquetbol formativo, con foco en brindar visibilidad a jugadores, equipos y cuerpos técnicos. Desde hace más de dos años registramos partidos de distintas categorías, generando contenido que hoy es utilizado tanto para el análisis deportivo como para que familias y seguidores puedan acompañar y revivir cada encuentro.</p>
-        <p>Con la incorporación de transmisiones en vivo y de acceso gratuito, la audiencia aumentó de forma sostenida, consolidando una comunidad de espectadores que acompaña regularmente cada transmisión como un espacio estable, confiable y cercano al deporte local.</p>
+        <p>VillaTV es un proyecto independiente dedicado a la transmisión y difusión del básquetbol formativo, con foco en brindar visibilidad a jugadores, equipos y cuerpos técnicos[cite: 5]. Desde hace más de dos años registramos partidos de distintas categorías, generando contenido que hoy es utilizado tanto para el análisis deportivo como para que familias y seguidores puedan acompañar y revivir cada encuentro[cite: 5].</p>
+        <p>Con la incorporación de transmisiones en vivo y de acceso gratuito, la audiencia aumentó de forma sostenida, consolidando una comunidad de espectadores que acompaña regularmente cada transmisión como un espacio estable, confiable y cercano al deporte local[cite: 5].</p>
     </div>
 
     <h2>Números del Canal (Último Año)</h2>
-    <div class="info-box" style="margin-top: 10px;">
-        <ul style="text-align: left; max-width: 650px; margin: 0 auto; line-height: 1.8;">
-            <li><strong>+100.000 visualizaciones</strong> en los últimos 365 días, consolidando una comunidad fiel.</li>
-            <li><strong>+15.000 horas de reproducción</strong> totales, con un impresionante crecimiento del 150% respecto al año anterior.</li>
-            <li><strong>+1.600 suscriptores</strong> activos en el canal y en constante aumento.</li>
-            <li><strong>+570.000 impresiones anuales:</strong> Tu marca expuesta de forma constante en las pantallas de nuestro público.</li>
-            <li><strong>Alta retención de audiencia:</strong> El promedio de permanencia por espectador supera los <strong>10 minutos por sesión</strong>, garantizando que los anuncios realmente se vean.</li>
-            <li><strong>Picos de más de 4.000 vistas por partido</strong> en encuentros clave y más de <strong>400 usuarios conectados en simultáneo</strong> alentando en vivo.</li>
+    <div class="info-box">
+        <ul class="info-list">
+            <li><strong>+83.000 visualizaciones</strong> en los últimos 365 días, consolidando una comunidad fiel[cite: 5].</li>
+            <li><strong>+13.000 horas de reproducción</strong> totales, con un impresionante crecimiento del 150% respecto al año anterior[cite: 5].</li>
+            <li><strong>+1.500 suscriptores</strong> activos en el canal y en constante aumento[cite: 5].</li>
+            <li><strong>+570.000 impresiones anuales:</strong> Tu marca expuesta de forma constante en las pantallas de nuestro público[cite: 5].</li>
+            <li><strong>Alta retención de audiencia:</strong> El promedio de permanencia por espectador supera los <strong>10 minutos por sesión</strong>, garantizando que los anuncios realmente se vean[cite: 5].</li>
+            <li><strong>Picos de más de 4.000 vistas por partido</strong> en encuentros clave y más de <strong>400 usuarios conectados en simultáneo</strong> alentando en vivo[cite: 5].</li>
         </ul>
     </div>
 
     <h2>3 razones para anunciar en VillaTV</h2>
-    <ul style="text-align: left; max-width: 750px; margin: 20px auto; line-height: 1.8;">
-        <li><strong>Impacto real en el deporte local:</strong> Los entrenadores nos destacan como un recurso útil. Nuestro contenido se integra a sus rutinas para analizar jugadas y planificar estrategias.</li>
-        <li><strong>Alcance relevante:</strong> Nuestra audiencia está compuesta por deportistas, familias y amantes del básquetbol juvenil, un público comprometido y con una fuerte conexión emocional.</li>
-        <li><strong>Actividad todo el año:</strong> Cubrimos competencias de corrido. Campeonato U16 a U20 (marzo a noviembre) y Torneo U23 (octubre a marzo).</li>
+    <ul class="info-list">
+        <li><strong>Impacto real en el deporte local:</strong> Los entrenadores nos destacan como un recurso útil[cite: 5]. Nuestro contenido se integra a sus rutinas para analizar jugadas y planificar estrategias[cite: 5].</li>
+        <li><strong>Alcance relevante:</strong> Nuestra audiencia está compuesta por deportistas, familias y amantes del básquetbol juvenil, un público comprometido y con una fuerte conexión emocional[cite: 5].</li>
+        <li><strong>Actividad todo el año:</strong> Cubrimos competencias de corrido[cite: 5]. Campeonato U16 a U20 (marzo a noviembre) y Torneo U23 (octubre a marzo)[cite: 5].</li>
     </ul>
 
     <h2>Planes de Patrocinio</h2>
     <p>Contamos con opciones flexibles mediante transferencia bancaria, efectivo o suscripción mensual con <strong>cobro automático a través de MercadoPago</strong>:</p>
     
-    <div class="planes-grid" style="grid-template-columns: 1fr; gap: 25px;">
+    <div class="planes-grid">
         
-        <div class="plan-box" style="padding: 25px 20px;">
+        <!-- Plan Inicial -->
+        <div class="plan-box">
             <div>
-                <h3 style="margin-top: 0; font-size: 1.6em; text-align: left;">Plan Inicial</h3>
-                
-                <div style="background: rgba(204, 56, 56, 0.1); padding: 15px; border-radius: 8px; margin: 15px 0; text-align: left;">
-                    <span style="font-size: 2.2em; color: var(--rojo-villa); font-weight: bold;">$ 500</span>
-                    <span style="font-size: 0.9em; color: var(--gris-texto); display: block; margin-top: 5px;">PESOS URUGUAYOS / MES</span>
+                <div class="plan-header">
+                    <h3>Plan Inicial</h3>
                 </div>
                 
-                <p style="text-align: left; text-align-last: left; font-size: 0.95em; margin-bottom: 20px; color: #ddd;">
-                    Presencia básica y accesible para pequeños comercios y emprendedores que desean apoyar la difusión del deporte local.
+                <div class="price-box">
+                    <span class="price-amount">$ 500</span>
+                    <span class="price-period">PESOS URUGUAYOS / MES</span>
+                </div>
+                
+                <p class="plan-desc">
+                    Presencia básica y accesible para pequeños comercios y emprendedores que desean apoyar la difusión del deporte local[cite: 5].
                 </p>
                 
-                <ul style="text-align: left; padding-left: 20px; margin: 0 0 25px 0; list-style-type: '✓ '; color: #eee; line-height: 1.6; font-size: 0.95em;">
-                    <li style="margin-bottom: 10px;"><strong>Banner publicitario en pantalla</strong> (450 x 125 px) durante el juego en vivo.</li>
-                    <li style="margin-bottom: 10px;">Mínimo de <strong>5 apariciones por partido</strong> (8 a 10 segundos cada una).</li>
-                    <li>Excelente relación costo-beneficio para arrancar a pautar.</li>
+                <ul class="plan-features">
+                    <li><strong>Banner publicitario en pantalla</strong> (450 x 125 px) durante el juego en vivo[cite: 5].</li>
+                    <li>Mínimo de <strong>5 apariciones por partido</strong> (8 a 10 segundos cada una)[cite: 5].</li>
+                    <li>Excelente relación costo-beneficio para arrancar a pautar[cite: 5].</li>
                 </ul>
             </div>
-                <div class="ejemplo-preview" onclick="abrirModal('1.jpg')">
-                <img src="anuncia-inicial.png" alt="Ejemplo Plan Inicial">
-                <span>🔍 Ver ejemplo de ubicación en pantalla</span>
-            </div>
-            <a href="https://wa.me/59899232188?text=Hola%20Federico,%20quiero%20consultar%20por%20el%20Plan%20Inicial%20para%20anunciar%20en%20VillaTV" target="_blank" class="btn-wsap" style="padding: 12px; font-size: 0.9em; border-radius: 6px; text-align: center;">SOLICITAR PLAN INICIAL</a>
+            <a href="https://wa.me/59899232188?text=Hola%20Federico,%20quiero%20consultar%20por%20el%20Plan%20Inicial%20para%20anunciar%20en%20VillaTV" target="_blank" class="btn-wsap">SOLICITAR PLAN INICIAL</a>
         </div>
 
-        <div class="plan-box" style="padding: 25px 20px; border: 1px solid var(--rojo-villa); border-left: 5px solid var(--rojo-villa); background: #221a1a;">
+        <!-- Plan Básico (Destacado) -->
+        <div class="plan-box featured">
             <div>
-                <h3 style="margin-top: 0; font-size: 1.6em; text-align: left; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-                    Plan Básico
-                    <span style="background: var(--rojo-villa); color: white; font-size: 0.5em; padding: 4px 10px; border-radius: 20px; font-weight: bold; letter-spacing: 0.5px;">RECOMENDADO</span>
-                </h3>
-                
-                <div style="background: rgba(204, 56, 56, 0.2); padding: 15px; border-radius: 8px; margin: 15px 0; text-align: left; border: 1px solid rgba(204, 56, 56, 0.3);">
-                    <span style="font-size: 2.2em; color: var(--rojo-villa); font-weight: bold;">$ 1.200</span>
-                    <span style="font-size: 0.9em; color: var(--gris-texto); display: block; margin-top: 5px;">PESOS URUGUAYOS / MES</span>
+                <div class="plan-header">
+                    <h3>Plan Básico</h3>
+                    <span class="badge badge-featured">RECOMENDADO</span>
                 </div>
                 
-                <p style="text-align: left; text-align-last: left; font-size: 0.95em; margin-bottom: 20px; color: #ddd;">
-                    Ideal para comercios locales que buscan visibilidad constante y presencia destacada en los momentos decisivos del partido.
+                <div class="price-box">
+                    <span class="price-amount">$ 1.200</span>
+                    <span class="price-period">PESOS URUGUAYOS / MES</span>
+                </div>
+                
+                <p class="plan-desc">
+                    Ideal para comercios locales que buscan visibilidad constante y presencia destacada en los momentos decisivos del partido[cite: 5].
                 </p>
                 
-                <ul style="text-align: left; padding-left: 20px; margin: 0 0 25px 0; list-style-type: '✓ '; color: #eee; line-height: 1.6; font-size: 0.95em;">
-                    <li style="margin-bottom: 10px;"><strong>Todo lo incluido</strong> en el Plan Inicial.</li>
-                    <li style="margin-bottom: 10px;">Imagen publicitaria fija a <strong>pantalla completa</strong> en las pausas naturales del juego (tiempos muertos, entretiempo).</li>
-                    <li>Soporte y orden de marcas transparente.</li>
+                <ul class="plan-features">
+                    <li><strong>Todo lo incluido</strong> en el Plan Inicial[cite: 5].</li>
+                    <li>Imagen publicitaria fija a <strong>pantalla completa</strong> en las pausas naturales del juego (tiempos muertos, entretiempo)[cite: 5].</li>
+                    <li>Soporte y orden de marcas transparente[cite: 5].</li>
                 </ul>
             </div>
-            <a href="https://wa.me/59899232188?text=Hola%20Federico,%20quiero%20consultar%20por%20el%20Plan%20B%C3%A1sico%20para%20anunciar%20en%20VillaTV" target="_blank" class="btn-wsap" style="padding: 12px; font-size: 0.9em; border-radius: 6px; text-align: center;">SOLICITAR PLAN BÁSICO</a>
+            <a href="https://wa.me/59899232188?text=Hola%20Federico,%20quiero%20consultar%20por%20el%20Plan%20B%C3%A1sico%20para%20anunciar%20en%20VillaTV" target="_blank" class="btn-wsap">SOLICITAR PLAN BÁSICO</a>
         </div>
 
-        <div class="plan-box" style="padding: 25px 20px;">
+        <!-- Plan Plus -->
+        <div class="plan-box">
             <div>
-                <h3 style="margin-top: 0; font-size: 1.6em; text-align: left; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-                    Plan Plus
-                    <span style="background: #333; color: #fff; border: 1px solid var(--rojo-villa); font-size: 0.5em; padding: 4px 10px; border-radius: 20px; font-weight: bold; letter-spacing: 0.5px;">CUPOS LIMITADOS</span>
-                </h3>
-                
-                <div style="background: rgba(204, 56, 56, 0.1); padding: 15px; border-radius: 8px; margin: 15px 0; text-align: left;">
-                    <span style="font-size: 2.2em; color: var(--rojo-villa); font-weight: bold;">$ 2.500</span>
-                    <span style="font-size: 0.9em; color: var(--gris-texto); display: block; margin-top: 5px;">PESOS URUGUAYOS / MES</span>
+                <div class="plan-header">
+                    <h3>Plan Plus</h3>
+                    <span class="badge badge-outline">CUPOS LIMITADOS</span>
                 </div>
                 
-                <p style="text-align: left; text-align-last: left; font-size: 0.95em; margin-bottom: 20px; color: #ddd;">
-                    Máxima exposición audiovisual tanto en las transmisiones en vivo como en el movimiento diario de nuestras redes sociales.
+                <div class="price-box">
+                    <span class="price-amount">$ 2.500</span>
+                    <span class="price-period">PESOS URUGUAYOS / MES</span>
+                </div>
+                
+                <p class="plan-desc">
+                    Máxima exposición audiovisual tanto en las transmisiones en vivo como en el movimiento diario de nuestras redes sociales[cite: 5].
                 </p>
                 
-                <ul style="text-align: left; padding-left: 20px; margin: 0 0 25px 0; list-style-type: '✓ '; color: #eee; line-height: 1.6; font-size: 0.95em;">
-                    <li style="margin-bottom: 10px;"><strong>Todo lo incluido</strong> en el Plan Básico.</li>
-                    <li style="margin-bottom: 10px;">Publicidad en video a pantalla completa <strong>con locución</strong> durante las pausas naturales del juego (tiempos muertos, entretiempo).</li>
-                    <li style="margin-bottom: 10px;">Logo en todos los <strong>afiches promocionales</strong> en nuestras redes sociales.</li>
-                    <li>Aparición destacada en la pantalla inicial y final de cada transmisión.</li>
+                <ul class="plan-features">
+                    <li><strong>Todo lo incluido</strong> en el Plan Básico[cite: 5].</li>
+                    <li>Publicidad en video a pantalla completa <strong>con locución</strong> durante las pausas naturales del juego (tiempos muertos, entretiempo)[cite: 5].</li>
+                    <li>Logo en todos los <strong>afiches promocionales</strong> en nuestras redes sociales[cite: 5].</li>
+                    <li>Aparición destacada en la pantalla inicial y final de cada transmisión[cite: 5].</li>
                 </ul>
             </div>
-            <a href="https://wa.me/59899232188?text=Hola%20Federico,%20quiero%20consultar%20por%20el%20Plan%20Plus%20para%20anunciar%20en%20VillaTV" target="_blank" class="btn-wsap" style="padding: 12px; font-size: 0.9em; border-radius: 6px; text-align: center;">SOLICITAR PLAN PLUS</a>
+            <a href="https://wa.me/59899232188?text=Hola%20Federico,%20quiero%20consultar%20por%20el%20Plan%20Plus%20para%20anunciar%20en%20VillaTV" target="_blank" class="btn-wsap">SOLICITAR PLAN PLUS</a>
         </div>
 
     </div>
 
-    <div class="info-box" style="margin-top: 30px;">
+    <div class="info-box">
         <h3>Sé parte del crecimiento del deporte de formativas</h3>
-        <p>Al sumarte como patrocinador, estarás contribuyendo directamente a mejorar nuestra capacidad técnica para llevar más partidos en vivo, con mejor calidad y mayor alcance. Tu apoyo es la clave.</p>
+        <p>Al sumarte como patrocinador, estarás contribuyendo directamente a mejorar nuestra capacidad técnica para llevar más partidos en vivo, con mejor calidad y mayor alcance[cite: 5]. Tu apoyo es la clave[cite: 5].</p>
     </div>
 
     <a href="https://wa.me/59899232188" class="btn-wsap" target="_blank">CONTACTAR POR WHATSAPP</a>
@@ -177,7 +157,7 @@
             </a>
         </div>
 
-        <p>© 2026 VillaTV - Montevideo, Uruguay</p>
+        <p>© 2026 VillaTV - Montevideo, Uruguay[cite: 5]</p>
             
         <div class="footer-links">
             <a href="plus">VillaTV+</a>
@@ -188,5 +168,7 @@
         </div>
     </div>
 </footer>
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"e57ee575e8d04d009a350b4ab579cfea","r":1,"spa":2}' crossorigin="anonymous"></script>
 </body>
 </html>
