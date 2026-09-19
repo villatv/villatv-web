@@ -299,3 +299,74 @@ footer a:hover {
 @media (max-width: 650px) {
     .payment-grid, .planes-grid { grid-template-columns: 1fr; }
 }
+
+/* Miniatura dentro de la tarjeta del plan */
+.ejemplo-preview {
+    margin: 15px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+    transition: transform 0.2s, border-color 0.2s;
+    background: #111;
+}
+
+.ejemplo-preview:hover {
+    transform: translateY(-2px);
+    border-color: var(--rojo-villa);
+}
+
+.ejemplo-preview img {
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+.ejemplo-preview:hover img {
+    opacity: 1;
+}
+
+.ejemplo-preview span {
+    display: block;
+    padding: 6px 10px;
+    font-size: 0.82em;
+    color: #ccc;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+/* Modal superpuesto */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-contenido {
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.8);
+    border: 1px solid #333;
+}
+
+.modal-cerrar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
