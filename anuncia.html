@@ -10,6 +10,27 @@
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="estilo.css">
 </head>
+
+    <script>
+    function abrirModal(imagenSrc) {
+        var modal = document.getElementById("modal-ejemplo");
+        var imgModal = document.getElementById("img-modal");
+        modal.style.display = "flex";
+        imgModal.src = imagenSrc;
+    }
+
+    function cerrarModal() {
+        document.getElementById("modal-ejemplo").style.display = "none";
+    }
+
+    // Cerrar modal al presionar la tecla Escape
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            cerrarModal();
+        }
+    });
+    </script>
+
 <body>
 
 <nav>
