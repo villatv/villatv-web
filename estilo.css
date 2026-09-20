@@ -441,4 +441,9 @@ footer a:hover {
    ========================================== */
 @media (max-width: 650px) {
     .payment-grid, .planes-grid { grid-template-columns: 1fr; }
+
+   .preview-img-wrapper img {
+        max-height: 280px;
+        object-fit: contain;
+    }
 }
