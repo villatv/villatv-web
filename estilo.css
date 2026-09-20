@@ -399,6 +399,44 @@ footer a:hover {
 }
 
 /* ==========================================
+   DESPLEGABLE DE VISTA PREVIA DE ANUNCIOS
+   ========================================== */
+.preview-details {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.btn-preview-link {
+    font-size: 0.85em;
+    color: var(--gris-texto);
+    cursor: pointer;
+    user-select: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.btn-preview-link:hover {
+    color: var(--rojo-villa);
+    text-decoration: underline;
+}
+
+.preview-img-wrapper {
+    margin-top: 12px;
+    background: #000;
+    border-radius: 6px;
+    border: 1px solid var(--gris-borde);
+    padding: 6px;
+    overflow: hidden;
+}
+
+.preview-img-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+/* ==========================================
    RESPONSIVE
    ========================================== */
 @media (max-width: 650px) {
