@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Meta etiquetas SEO principales -->
+    <title>VillaTV+ | Servicio de Streaming y Transmisión de Partidos en Vivo</title>
+    <meta name="description" content="Contratá el servicio de streaming en vivo para tus partidos, ligas y torneos deportivos en Uruguay. Producción de video HD, marcador en pantalla y transmisión profesional.">
+    <meta name="keywords" content="VillaTV+, streaming de partidos, transmision en vivo uruguay, streaming basquetbol, produccion de eventos deportivos, transmitir torneo amateur, montevideo">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://villatv.uy/plus">
+
+    <!-- Open Graph / Redes Sociales y WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://villatv.uy/plus">
+    <meta property="og:title" content="VillaTV+ | Cobertura y Streaming de Partidos a Demanda">
+    <meta property="og:description" content="Transmitimos en vivo tu partido o torneo con marcador dinámico y gráfica profesional. Hacé que tu evento se vea desde cualquier lugar.">
+    <meta property="og:image" content="https://villatv.uy/plus.png">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Estilo existente -->
+    <link rel="stylesheet" href="estilo.css">
+
+    <!-- Schema.org estructurado para Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "VillaTV+ Streaming Deportivo",
+      "provider": {
+        "@type": "Organization",
+        "name": "VillaTV",
+        "url": "https://villatv.uy"
+      },
+      "serviceType": "Transmisión en vivo y producción de eventos deportivos",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Uruguay"
+      },
+      "description": "Servicio de cobertura en vivo para partidos puntuales, finales y torneos deportivos con marcador en vivo y gráfica personalizada."
+    }
+    </script>
+</head>
+<body>
+
+<nav>
+    <a href="/"><img src="plus.png" alt="VillaTV+" class="logo"></a>
+</nav>
+
+<div class="main-container">
+    <div class="status-bar">COBERTURA Y STREAMING A DEMANDA</div>
+    
+    <div class="info-box">
+        <h1>Transmití tu partido o torneo en vivo</h1>
+        <p><strong>VillaTV+</strong> es nuestro servicio especializado de producción y transmisión en vivo pensado para ligas, equipos, clubes y torneos independientes que quieren llevar sus partidos a otro nivel.</p>
+        
+        <p>Ofrecemos cobertura audiovisual en alta definición con marcador en tiempo real en pantalla, gráfica de evento y transmisión estable para que familiares, hinchas y sponsors sigan cada minuto en directo.</p>
+    </div>
+
+    <!-- Grilla con las modalidades del servicio -->
+    <div class="resource-grid">
+        <div class="resource-card">
+            <h2>Partido Puntual</h2>
+            <p>Ideal para finales, partidos decisivos o eventos únicos de tu equipo. Llegamos, armamos el equipamiento y emitimos tu encuentro en directo.</p>
+        </div>
+
+        <div class="resource-card">
+            <h2>Torneos y Jornadas</h2>
+            <p>Cobertura integral para ligas o torneos de fin de semana. Incluye marcador dinámico, marcas de tus patrocinadores y logo del torneo en pantalla.</p>
+        </div>
+
+        <div class="resource-card">
+            <h2>Transmisión para tu Canal</h2>
+            <p>¿Tenés tu propio canal de YouTube o red social? Nos encargamos de la producción técnica e infraestructura emitiendo directamente en tu plataforma.</p>
+        </div>
+    </div>
+
+    <div class="info-box quote-box" style="margin-top: 30px;">
+        <h2>¿Querés cotizar una fecha o partido?</h2>
+        <p>Completá los datos del evento y te contactaremos para consultar disponibilidad y preparar una cotización.</p>
+
+        <form id="quoteForm" class="quote-form">
+            <div class="quote-grid">
+                <div class="quote-field">
+                    <label for="eventDate">Fecha del evento</label>
+                    <input type="date" id="eventDate" name="eventDate" required>
+                </div>
+
+                <div class="quote-field">
+                    <label for="startTime">Hora de inicio</label>
+                    <input type="time" id="startTime" name="startTime" required>
+                </div>
+
+                <div class="quote-field">
+                    <label for="endTime">Hora de finalización</label>
+                    <input type="time" id="endTime" name="endTime" required>
+                    <small>Se completa automáticamente dos horas después del inicio. Podés modificarla.</small>
+                </div>
+
+                <div class="quote-field quote-field-full">
+                    <label for="venue">Cancha / Club</label>
+                    <select id="venue" name="venue" required>
+                        <option value="">Seleccioná una cancha o club</option>
+                        <option>Aguada</option>
+                        <option>Atenas</option>
+                        <option>Biguá</option>
+                        <option>Bohemios</option>
+                        <option>Capitol</option>
+                        <option>Cordón</option>
+                        <option>Defensor Sporting</option>
+                        <option>Goes</option>
+                        <option>Hebraica Macabi</option>
+                        <option>Malvín</option>
+                        <option>Miramar</option>
+                        <option>Náutico</option>
+                        <option>Nacional</option>
+                        <option>Olimpia</option>
+                        <option>Peñarol</option>
+                        <option>Sayago</option>
+                        <option>Tabaré</option>
+                        <option>Trouville</option>
+                        <option>Unión Atlética</option>
+                        <option>Urunday Universitario</option>
+                        <option>Welcome</option>
+                        <option>Yale</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="quote-field quote-field-full" id="venueOtherWrap" hidden>
+                    <label for="venueOther">Especificar cancha o lugar</label>
+                    <input type="text" id="venueOther" name="venueOther" placeholder="Nombre del club, gimnasio o dirección">
+                </div>
+
+                <div class="quote-field quote-field-full">
+                    <label for="category">Categoría</label>
+                    <select id="category" name="category" required>
+                        <option value="">Seleccioná una categoría</option>
+                        <option>U16</option>
+                        <option>U16 Femenino</option>
+                        <option>U18</option>
+                        <option>U19 Femenino</option>
+                        <option>U20</option>
+                        <option>Amateur</option>
+                        <option value="Otra">Otra</option>
+                    </select>
+                </div>
+
+                <div class="quote-field quote-field-full" id="categoryOtherWrap" hidden>
+                    <label for="categoryOther">Especificar categoría</label>
+                    <input type="text" id="categoryOther" name="categoryOther" placeholder="Indicá la categoría o disciplina">
+                </div>
+
+                <div class="quote-field quote-field-full">
+                    <label for="extraMessage">Mensaje adicional <span class="quote-optional">(opcional)</span></label>
+                    <textarea id="extraMessage" name="extraMessage" rows="4" placeholder="Contanos si hay algo más que debamos saber sobre el evento..."></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-wsap quote-submit">CONSULTAR POR WHATSAPP</button>
+            <p class="quote-note">Se abrirá WhatsApp con tu consulta preparada. Solo tendrás que revisar el mensaje y enviarlo.</p>
+        </form>
+    </div>
+
+    <style>
+        .quote-form {
+            max-width: 760px;
+            margin: 26px auto 0;
+            text-align: left;
+        }
+        .quote-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 18px;
+        }
+        .quote-field { min-width: 0; }
+        .quote-field-full { grid-column: 1 / -1; }
+        .quote-field label {
+            display: block;
+            margin-bottom: 7px;
+            color: #f5f5f5;
+            font-weight: 600;
+            font-size: .95em;
+        }
+        .quote-field input,
+        .quote-field select,
+        .quote-field textarea {
+            box-sizing: border-box;
+            width: 100%;
+            min-height: 44px;
+            padding: 11px 12px;
+            border: 1px solid #484848;
+            border-radius: 6px;
+            background: #101010;
+            color: #fff;
+            font: inherit;
+            color-scheme: dark;
+        }
+        .quote-field textarea { min-height: 105px; resize: vertical; }
+        .quote-field input:focus,
+        .quote-field select:focus,
+        .quote-field textarea:focus {
+            outline: 2px solid var(--rojo-villa, #CC3838);
+            outline-offset: 1px;
+            border-color: var(--rojo-villa, #CC3838);
+        }
+        .quote-field small,
+        .quote-note {
+            display: block;
+            margin-top: 6px;
+            color: #bdbdbd;
+            font-size: .82em;
+            line-height: 1.45;
+        }
+        .quote-optional { color: #aaa; font-weight: 400; }
+        .quote-submit {
+            display: block;
+            width: 100%;
+            margin-top: 24px;
+            border: 0;
+            cursor: pointer;
+            font: inherit;
+            font-weight: 700;
+        }
+        .quote-note { text-align: center; margin-bottom: 0; }
+        @media (max-width: 600px) {
+            .quote-grid { grid-template-columns: 1fr; gap: 15px; }
+            .quote-field-full { grid-column: auto; }
+            .quote-form { margin-top: 20px; }
+        }
+    </style>
+
+    <script>
+    (() => {
+        const form = document.getElementById('quoteForm');
+        if (!form) return;
+
+        const startInput = document.getElementById('startTime');
+        const endInput = document.getElementById('endTime');
+        const venueSelect = document.getElementById('venue');
+        const venueOtherWrap = document.getElementById('venueOtherWrap');
+        const venueOther = document.getElementById('venueOther');
+        const categorySelect = document.getElementById('category');
+        const categoryOtherWrap = document.getElementById('categoryOtherWrap');
+        const categoryOther = document.getElementById('categoryOther');
+
+        // Evita seleccionar una fecha anterior al día actual.
+        const today = new Date();
+        const localToday = new Date(today.getTime() - today.getTimezoneOffset() * 60000)
+            .toISOString().split('T')[0];
+        document.getElementById('eventDate').min = localToday;
+
+        startInput.addEventListener('change', () => {
+            if (!startInput.value) return;
+            const [hours, minutes] = startInput.value.split(':').map(Number);
+            const end = (hours * 60 + minutes + 120) % (24 * 60);
+            const endHours = String(Math.floor(end / 60)).padStart(2, '0');
+            const endMinutes = String(end % 60).padStart(2, '0');
+            endInput.value = `${endHours}:${endMinutes}`;
+        });
+
+        venueSelect.addEventListener('change', () => {
+            const isOther = venueSelect.value === 'Otro';
+            venueOtherWrap.hidden = !isOther;
+            venueOther.required = isOther;
+            if (!isOther) venueOther.value = '';
+        });
+
+        categorySelect.addEventListener('change', () => {
+            const isOther = categorySelect.value === 'Otra';
+            categoryOtherWrap.hidden = !isOther;
+            categoryOther.required = isOther;
+            if (!isOther) categoryOther.value = '';
+        });
+
+        form.addEventListener('submit', (event) => {
+            event.preventDefault();
+            if (!form.reportValidity()) return;
+
+            const date = document.getElementById('eventDate').value;
+            const [year, month, day] = date.split('-');
+            const formattedDate = `${day}/${month}/${year}`;
+            const venue = venueSelect.value === 'Otro' ? venueOther.value.trim() : venueSelect.value;
+            const category = categorySelect.value === 'Otra' ? categoryOther.value.trim() : categorySelect.value;
+            const extra = document.getElementById('extraMessage').value.trim();
+
+            const lines = [
+                '¡Hola! Quiero consultar por una cotización de VillaTV+.',
+                '',
+                `📅 Fecha: ${formattedDate}`,
+                `🕒 Horario: ${startInput.value} a ${endInput.value}`,
+                `🏟️ Cancha / Club: ${venue}`,
+                `🏀 Categoría: ${category}`
+            ];
+            if (extra) lines.push('', `📝 Información adicional: ${extra}`);
+            lines.push('', 'Quedo atento/a. ¡Gracias!');
+
+            const whatsappUrl = 'https://wa.me/59899232188?text=' + encodeURIComponent(lines.join('\n'));
+            window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+        });
+    })();
+    </script>
+
+    <div class="info-box" style="margin-top: 20px; border-left: 3px solid var(--rojo-villa);">
+        <h3 style="margin-top: 0; font-size: 1.1em;">Disponibilidad técnica y conectividad</h3>
+        <p style="font-size: 0.9em; margin-bottom: 0;">
+            Nos encargamos de toda la conectividad y equipamiento de transmisión. La viabilidad de la emisión en directo está sujeta a contar con una buena cobertura de datos móviles en el recinto (mínimo 10 Mbps estables de upload). En canchas con señal limitada, se podrán realizar grabaciones para subir en diferido.
+        </p>
+    </div>
+
+    <a href="/" class="back-link">← Volver a la página principal de VillaTV</a>
+</div>
+
+<footer>
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href="https://www.youtube.com/@VillaTV_uy" target="_blank" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+            <a href="https://instagram.com/VillaTV_uy" target="_blank" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61564655562749" target="_blank" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://t.me/villatv_uy" target="_blank" aria-label="Telegram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+            </a>
+        </div>
+
+        <p>© 2026 VillaTV - Montevideo, Uruguay</p>
+            
+        <div class="footer-links">
+            <a href="recursos">Recursos de Marca</a>
+            <span class="separator">|</span>
+            <a href="https://wa.me/59899232188" target="_blank">Contacto</a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
